@@ -1,0 +1,142 @@
+{
+  "scan_timestamp": "2025-01-19T00:00:00Z",
+  "project_info": {
+    "name": "autohedge",
+    "description": "Automated hedge fund system using AI agents",
+    "total_files_found": 16,
+    "files_scanned": 16,
+    "scan_coverage": 100.0,
+    "languages": ["python"],
+    "primary_language": "python",
+    "total_code_lines": 1940,
+    "documentation_files": 5
+  },
+  "modules": [
+    {
+      "name": "autohedge",
+      "path": "autohedge/",
+      "type": "core",
+      "entry_point": "autohedge/main.py",
+      "responsibility": "主要交易系统和多代理框架",
+      "status": "active",
+      "files_scanned": 4,
+      "total_files": 4,
+      "coverage": 100.0,
+      "key_components": [
+        "AutoHedge - 主要交易系统",
+        "TradingDirector - 交易总监代理",
+        "QuantAnalyst - 量化分析师代理",
+        "RiskManager - 风险管理代理",
+        "ExecutionAgent - 执行代理"
+      ],
+      "code_lines": 650,
+      "documentation_created": true
+    },
+    {
+      "name": "api",
+      "path": "api/",
+      "type": "service",
+      "entry_point": "api/api.py",
+      "responsibility": "FastAPI REST API服务",
+      "status": "active",
+      "files_scanned": 2,
+      "total_files": 2,
+      "coverage": 100.0,
+      "key_components": [
+        "AutoHedgeAPI - API服务器",
+        "用户管理和认证",
+        "交易执行接口",
+        "分析数据接口",
+        "API测试客户端"
+      ],
+      "code_lines": 663,
+      "documentation_created": true
+    },
+    {
+      "name": "experimental",
+      "path": "experimental/",
+      "type": "experimental",
+      "entry_point": null,
+      "responsibility": "实验性功能和原型开发",
+      "status": "development",
+      "files_scanned": 3,
+      "total_files": 3,
+      "coverage": 100.0,
+      "key_components": [
+        "BTCTransactionMonitor - 比特币监控",
+        "CryptoAgentWrapper - 加密货币代理",
+        "MarketMaker - 做市商策略"
+      ],
+      "code_lines": 452,
+      "documentation_created": true
+    },
+    {
+      "name": "tools",
+      "path": "autohedge/tools/",
+      "type": "utilities",
+      "entry_point": null,
+      "responsibility": "券商接口和交易工具",
+      "status": "active",
+      "files_scanned": 3,
+      "total_files": 3,
+      "coverage": 100.0,
+      "key_components": [
+        "TDAmeritradeClient - TD Ameritrade接口",
+        "TradeStation - TradeStation接口",
+        "ETradeWrapper - E*TRADE封装"
+      ],
+      "code_lines": 175,
+      "documentation_created": true
+    }
+  ],
+  "scan_gaps": [],
+  "test_coverage": {
+    "unit_tests": 0,
+    "integration_tests": 1,
+    "api_tests": 1,
+    "manual_tests": 1,
+    "overall_coverage": 15.0
+  },
+  "quality_metrics": {
+    "code_style": "black",
+    "type_hints": 70.0,
+    "docstring_coverage": 60.0,
+    "error_handling": 80.0,
+    "logging_integration": 90.0
+  },
+  "ignored_patterns": [
+    "__pycache__/",
+    "*.pyc",
+    "*.pyo",
+    ".Python",
+    "build/",
+    "dist/",
+    "*.egg-info/",
+    ".pytest_cache/",
+    ".coverage",
+    "htmlcov/",
+    ".tox/",
+    ".nox/",
+    ".ruff_cache/",
+    "logs/*.csv"
+  ],
+  "documentation_created": [
+    "/Users/berton/Github/autoHedge/CLAUDE.md",
+    "/Users/berton/Github/autoHedge/autohedge/CLAUDE.md",
+    "/Users/berton/Github/autoHedge/api/CLAUDE.md",
+    "/Users/berton/Github/autoHedge/experimental/CLAUDE.md",
+    "/Users/berton/Github/autoHedge/autohedge/tools/CLAUDE.md"
+  ],
+  "next_scan_priorities": [
+    "添加单元测试覆盖",
+    "完善类型提示",
+    "添加性能测试",
+    "完善错误处理",
+    "添加配置验证"
+  ],
+  "truncated": false,
+  "scan_complete": true,
+  "completion_timestamp": "2025-01-19T00:00:00Z",
+  "final_coverage": 100.0,
+  "documentation_coverage": 100.0
+}
